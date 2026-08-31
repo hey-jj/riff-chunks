@@ -1,0 +1,22 @@
+[package]
+name = "riff-chunks"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.63.0"
+authors = ["Justin Jones <hey.jones@icloud.com>"]
+license = "MIT"
+description = "Borrowed and streaming readers plus a seekable writer for RIFF containers."
+keywords = ["riff", "wav", "webp", "avi", "parser"]
+categories = ["multimedia::encoding", "parser-implementations", "no-std"]
+readme = "README.md"
+repository = "https://github.com/hey-jj/riff-chunks"
+documentation = "https://docs.rs/riff-chunks"
+exclude = ["tools/**", "fuzz/**"]
+
+[features]
+default = ["std"]
+std = []
+
+[lib]
+name = "riff_chunks"
+path = "src/lib.rs"
